@@ -101,11 +101,11 @@ $('document').ready(function(){
 			loopSeven();
 		});
 	}
-	function loopSeven() {
+	function loopEight() {
 		var randleft = 1000*Math.random();
 		var randtop = 500*Math.random();
 		$('#b8').animate({left:randleft,bottom:randtop},10000,function(){
-			loopSeven();
+			loopEight();
 		});
 	}
 
@@ -125,6 +125,7 @@ $('document').ready(function(){
 		loopFive();
 		loopSix();
 		loopSeven();
+		loopEight();
 		
 		$(this).fadeOut('slow').delay(5000).promise().done(function(){
 			$('#cake_fadein').fadeIn('slow');
